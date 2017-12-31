@@ -30,7 +30,7 @@ ga.vrtx <- read.csv('ga_actors.csv', header=TRUE, stringsAsFactors=FALSE)
 g <- graph.data.frame(ga.data, vertices=ga.vrtx, directed=FALSE)
 plot(g)
 ```
-
+![Image of Q1graph](/img/Q1Agraph.JPG)
 
 the actor with the maximal betweenness centrality
 ```{r}
@@ -62,7 +62,7 @@ memb1 <- membership(gc1)
 plot(g, vertex.size=7, vertex.color=memb1, asp=FALSE)
 
 ```
-
+![Image of Q1graph](/img/Q1BalgoGC1.JPG)
 the number of communities for cluster edge betweenness
 ```{r}
 length(gc1)
@@ -92,7 +92,7 @@ memb2 <- membership(gc2)
 plot(g, vertex.size=7, #vertex.label=NA,
      vertex.color=memb2, asp=FALSE)
 ```
-
+![Image of Q1graph](/img/Q1BalgoGC2.JPG)
 
 the number of communities for cluster walktrap
 ```{r}
@@ -182,6 +182,7 @@ newg<- graph.adjacency(A)
 g<- as.undirected(newg)
 plot(g)
 ```
+![Image of Q1graph](/img/Q2graph.JPG)
 
 ## Q2 d
 the genre with the maximal betweenness centrality
@@ -217,6 +218,7 @@ memb3 <- membership(gc3)
 plot(g, vertex.size=7,vertex.color=memb3, asp=FALSE)
 
 ```
+![Image of Q1graph](/img/Q2DalgoGC3.JPG)
 
 the number of communities for cluster edge betweenness
 ```{r}
@@ -248,6 +250,7 @@ gc4 <- walktrap.community(g)
 memb4 <- membership(gc4)
 plot(g, vertex.size=7,vertex.color=memb4, asp=FALSE)
 ```
+![Image of Q1graph](/img/Q2DalgoGC4.JPG)
 
 the number of communities for cluster walktrap
 ```{r}
