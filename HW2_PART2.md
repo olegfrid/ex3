@@ -4,8 +4,8 @@ output:
   html_document: default
   pdf_document: default
 ---
-##In part 2 of the HW we will take a list of music genres and scrap twittes related to those genres.
-##after scarping we will make a graph of asociated genres and network analyze this graph.
+## In part 2 of the HW we will take a list of music genres and scrap twittes related to those genres.
+## after scarping we will make a graph of asociated genres and network analyze this graph.
 ```{r}
 folder = 'C:/Users/oleg/Desktop/Study/year5/semesterA/dataAnalys/network analys'
 setwd(folder)
